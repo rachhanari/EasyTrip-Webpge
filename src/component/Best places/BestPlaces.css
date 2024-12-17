@@ -1,0 +1,149 @@
+/* General Container Styling */
+.places-details-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Image Styling with Hover Animation */
+  .places-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .details-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .places-image:hover .details-image {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  /* Content Styling */
+  .places-details-content {
+    padding: 20px 0;
+    text-align: left;
+  }
+  
+  .places-details-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .places-details-meta {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .places-details-meta svg {
+    color: #e74c3c;
+    margin-right: 5px;
+  }
+  
+  .places-details-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Titles and Headings */
+  h4 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* No Details Placeholder */
+  .no-details {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #888;
+    padding: 50px;
+  }
+  
+  /* Divider Styling */
+  hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+  }
+  
+  /* Bottom Content */
+  .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .content {
+    flex-direction: column;
+  }
+  
+  /* Animation for Fade-In Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .places-details-container {
+      padding: 15px;
+    }
+  
+    .details-image {
+      height: 250px;
+    }
+  
+    .places-details-title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .places-details-title {
+      font-size: 1.5rem;
+    }
+  
+    .places-details-description {
+      font-size: 0.9rem;
+    }
+  
+    .details-image {
+      height: 200px;
+    }
+  }
+  

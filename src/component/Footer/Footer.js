@@ -7,7 +7,7 @@ import "../Footer/Footer.css";
 const FooterLinks = [
     { title: "Home", link: "/" },
     { title: "About", link: "/about" },
-    { title: "Best Places", link: "/best-places" },
+    { title: "BestPlaces", link: "/best-places" },
     { title: "Blogs", link: "/blogs" },
 ];
 

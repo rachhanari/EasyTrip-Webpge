@@ -10,7 +10,7 @@
   }
   
   .Navbar {
-    background-color: #e8ebf1;
+    background-color: white;
   }
   
   nav {
@@ -59,17 +59,18 @@
     background-color: lightblue;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    transform: translateZ(5px);
+    transform: scale(0.9);
+    transition: all ease 0.8s;
   }
   
   .btn:hover {
     background-color: blue;
+    transform: scale(1.9);
     transform: translateZ(15px);
   }
   
   img {
-    width: 8vw;
+    width: 5vw;
     display: flex;
   }
   
